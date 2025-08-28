@@ -1,0 +1,445 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: hsl(215, 90%, 8%);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 8px;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #ffd814;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.products-section {
+  background: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #232f3e;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  color: #b12704;
+  font-weight: bold;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffd814;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #f7ca00;
+}
+.site-footer {
+  background-color: #232f3e;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 15px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ff9900;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.hero-banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+  color: #ffd814;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #3a4553;
+  font-size: 13px;
+}
+/* 🧾 About Us Section */
+#about {
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 32px;
+  color: #1b2430;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2b39;
+  padding: 15px 20px;
+  color: white;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-box button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2b39;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+
+/* Search bar styling */
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 30px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-box button {
+  background-color: yellow;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Right side links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-right: 40px;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* login.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.logo {
+  height: 40px;
+  margin-bottom: 20px;
+  
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddb347;
+}
+
+.extra-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.extra-options a {
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+
+.extra-options a:hover {
+  text-decoration: underline;
+}
+.login-section {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reduce this if too much space */
+}
+
+.login-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0;  /* Remove extra margin */
+  padding: 0;
+}
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input[type="text"] {
+    width: 80%;
+    margin-right: 5px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .products-container {
+    grid-template-columns: 1fr; /* Show 1 product per row on mobile */
+    gap: 20px;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+
+  .login-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .login-section img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .login-section button {
+    width: 100%;
+  }
+}
+
+
+
+
+
