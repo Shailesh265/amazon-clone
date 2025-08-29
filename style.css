@@ -279,4 +279,38 @@ header, .navbar {
     width: 90%;
   }
 }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* દરેક product card */
+.product {
+  flex: 1 1 calc(25% - 15px);  /* Desktop: 4 cards */
+  box-sizing: border-box;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Tablet માટે */
+@media (max-width: 900px) {
+  .product {
+    flex: 1 1 calc(33.33% - 15px);  /* 3 cards per row */
+  }
+}
+
+/* Mobile માટે */
+@media (max-width: 600px) {
+  .product {
+    flex: 1 1 calc(50% - 15px);  /* 2 cards per row */
+  }
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
 
